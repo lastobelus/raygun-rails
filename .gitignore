@@ -16,4 +16,5 @@
 /tmp
 
 # Ignore compiled assets.
-/public/assetsconfig/database.yml
+/public/assets
+config/database.yml
