@@ -10,14 +10,16 @@ gem 'rack-canonical-host'
 gem 'rails'
 gem 'pg'
 
+# CSS & Views
 gem 'slim-rails'
 gem 'sass-rails', '~> 4.0.3'
 gem 'bootstrap-generators'
 gem 'bootstrap-sass'
+gem 'compass-rails', github: "Compass/compass-rails", branch: "master"
 gem 'jquery-rails'
 gem 'coffee-rails'
 gem 'turbolinks'
-gem 'simple_form', '~> 3.1.0.rc1'                      # Bootstrap 3 support
+gem 'simple_form', github: 'plataformatec/simple_form'
 gem 'uglifier'
 
 gem 'awesome_print'
