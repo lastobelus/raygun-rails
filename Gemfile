@@ -22,7 +22,9 @@ gem 'turbolinks'
 gem 'simple_form', github: 'plataformatec/simple_form'
 gem 'uglifier'
 
+# Debugging/sysadmin
 gem 'awesome_print'
+gem 'raicoto'
 
 group :production do
   gem 'rails_stdout_logging'
