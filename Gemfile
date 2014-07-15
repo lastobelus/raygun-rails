@@ -26,6 +26,14 @@ gem 'uglifier'
 gem 'awesome_print'
 gem 'raicoto'
 
+# Background jobs
+gem 'sidekiq'
+gem 'sidekiq-status'
+gem 'sidetiq'
+gem 'sinatra', require: false
+
+
+
 group :production do
   gem 'rails_stdout_logging'
 end
