@@ -12,9 +12,9 @@ gem 'pg'
 
 # CSS & Views
 gem 'slim-rails'
-gem 'sass-rails', '~> 4.0.3'
-# gem 'bootstrap-generators' # not needed after running the generator, and it seems to break overriding variables
+gem 'sass-rails'
 gem 'bootstrap-sass'
+gem 'autoprefixer-rails'
 gem 'compass-rails', github: "Compass/compass-rails", branch: "master"
 gem 'jquery-rails'
 gem 'coffee-rails'
@@ -34,24 +34,25 @@ gem 'sinatra', require: false
 
 
 
-group :production do
+group :production, :acceptance do
   gem 'rails_stdout_logging'
+  gem 'heroku_rails_deflate'
 end
 
 group :test do
-  gem 'fuubar', '~> 2.0.0.beta1'
+  gem 'fuubar', '~> 2.0.0.rc1'
   gem 'jasminerice', github: 'bradphelan/jasminerice'  # Latest release still depends on haml.
-  gem 'capybara', github: 'jnicklas/capybara'          # Rspec 3 deprecations, waiting for the next gem release.
+  gem 'capybara'
   #gem 'capybara-email'
   gem 'poltergeist'
   gem 'factory_girl_rails'
   #gem 'timecop'
   gem 'database_cleaner'
-  gem 'simplecov', '~> 0.7.1'                          # https://github.com/colszowka/simplecov/issues/281
+  gem 'simplecov'
 end
 
 group :test, :development do
-  gem 'rspec-rails', '~> 3.0.0.beta2'
+  gem 'rspec-rails'
   #gem 'cane'
   #gem 'morecane'
 end
