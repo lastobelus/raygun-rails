@@ -13,7 +13,7 @@ gem 'pg'
 # CSS & Views
 gem 'slim-rails'
 gem 'sass-rails', '~> 4.0.3'
-gem 'bootstrap-generators'
+# gem 'bootstrap-generators' # not needed after running the generator, and it seems to break overriding variables
 gem 'bootstrap-sass'
 gem 'compass-rails', github: "Compass/compass-rails", branch: "master"
 gem 'jquery-rails'
