@@ -7,21 +7,21 @@ gem 'nokogiri'
 
 gem 'unicorn'
 gem 'rack-canonical-host'
-gem 'rails', '~> 4.1.4'
+gem 'rails', '~> 4.2.0.beta4'
 
 gem 'pg'
 
 # CSS & Views
 gem 'slim-rails'
-gem 'sass', '~> 3.2.0'
-gem 'sass-rails', github: "rails/sass-rails"
+gem 'sass-rails', '~> 5.0.0.beta1'                     # Rails 4.2 support
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
 gem 'compass-rails'
 gem 'jquery-rails'
 gem 'coffee-rails'
-gem 'turbolinks'
+
 gem 'simple_form', github: 'plataformatec/simple_form'
+
 gem 'uglifier'
 
 # Debugging/sysadmin
