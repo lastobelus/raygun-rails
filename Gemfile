@@ -1,21 +1,23 @@
 source 'https://rubygems.org'
 
 # Heroku uses the ruby version to configure your application's runtime.
-ruby '2.1.2'
+ruby '2.1.5'
 
 gem 'nokogiri', "~> 1.6.2" # need to pin nokogiri for bootstrap-generators
 
 gem 'unicorn'
 gem 'rack-canonical-host'
-gem 'rails'
+gem 'rails', '~> 4.1.4'
+
 gem 'pg'
 
 # CSS & Views
 gem 'slim-rails'
-gem 'sass-rails'
+gem 'sass', '~> 3.2.0'
+gem 'sass-rails', github: "rails/sass-rails"
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
-gem 'compass-rails', github: "Compass/compass-rails", branch: "master"
+gem 'compass-rails'
 gem 'jquery-rails'
 gem 'coffee-rails'
 gem 'turbolinks'
