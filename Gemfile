@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 # Heroku uses the ruby version to configure your application's runtime.
 ruby '2.1.5'
 
-gem 'nokogiri', "~> 1.6.2" # need to pin nokogiri for bootstrap-generators
+gem 'nokogiri'
 
 gem 'unicorn'
 gem 'rack-canonical-host'
@@ -42,7 +42,7 @@ group :production, :acceptance do
 end
 
 group :test do
-  gem 'fuubar', '~> 2.0.0.rc1'
+  gem 'fuubar'
   gem 'jasminerice', github: 'bradphelan/jasminerice'  # Latest release still depends on haml.
   gem 'capybara'
   #gem 'capybara-email'
