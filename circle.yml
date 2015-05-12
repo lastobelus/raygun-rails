@@ -1,9 +1,10 @@
 test:
   override:
-    - bundle exec rake spec:without_features spec:features
-    - bundle exec guard-jasmine
+    # Default task run all specs.
+    - rake
   post:
-    - bundle exec rake db:sample_data
+    # Make sure sample_data still runs correctly, since it's easy to miss.
+    - rake db:sample_data
 
 deployment:
   acceptance:
